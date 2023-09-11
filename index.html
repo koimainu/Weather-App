@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/daccb727de.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="box-1">
+          <h1>
+            <span class="current-temperature">17</span> °C
+            <i class="fa-solid fa-cloud-rain current-icon"></i>
+          </h1>
+          <h2>
+            Rainy
+            <br />
+            L: 2° | H: 21°
+          </h2>
+          <button class="current-location-button">Current Location</button>
+          <h3>
+            <span class="city">Melbourne</span>
+            <br />
+            <span class="date">Monday 15 May 11:26pm</span>
+          </h3>
+        </div>
+        <hr class="border-right" />
+        <div class="box-2">
+          <form class="search-form">
+            <input type="search" placeholder="Search City" class="search" />
+          </form>
+          <div class="card side-bar">
+            <div class="card-body">
+              <div class="future-temperature-degrees-top">
+                21°C
+                <div class="day">Tue</div>
+                <i class="fa-regular fa-sun future-icon"></i>
+              </div>
+              <hr class="horizontal-side-bar" />
+              <div class="future-temperature-degrees">
+                18°C
+                <div class="day">Wed</div>
+                <i class="fa-solid fa-cloud-sun future-icon"></i>
+              </div>
+              <hr class="horizontal-side-bar" />
+              <div class="future-temperature-degrees">
+                19°C
+                <div class="day">Thu</div>
+                <i class="fa-regular fa-sun future-icon"></i>
+              </div>
+              <hr class="horizontal-side-bar" />
+              <div class="future-temperature-degrees">
+                16°C
+                <div class="day">Fri</div>
+                <i class="fa-solid fa-cloud-sun future-icon"></i>
+              </div>
+              <hr class="horizontal-side-bar" />
+              <div class="future-temperature-degrees">
+                14°C
+                <div class="day">Sat</div>
+                <i class="fa-solid fa-cloud-rain future-icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-3">
+          <div class="card bottom-bar">
+            <div class="card-body bottom-bar">
+              <ul>
+                <li class="weather-details">
+                  Wind
+                  <br />
+                  <strong>6 <span class="unit">km/h</span></strong>
+                </li>
+                <li class="weather-details">
+                  Humidity
+                  <br />
+                  <strong>67 <span class="unit">%</span></strong>
+                </li>
+                <li class="weather-details">
+                  Precipitation
+                  <br />
+                  <strong>0 <span class="unit">mm</span></strong>
+                </li>
+                <li class="weather-details uv-index">
+                  UV Index
+                  <br />
+                  <strong>0 <span class="unit">Low</span></strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
