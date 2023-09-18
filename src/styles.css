@@ -105,6 +105,10 @@ div.future-temperature-degrees {
   grid-auto-rows: auto;
 }
 
+.wrapper.height {
+  height: 480px;
+}
+
 .box-1 {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -122,6 +126,15 @@ div.future-temperature-degrees {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 4;
+}
+
+.box-2.height,
+.box-3.height {
+  height: fit-content;
+}
+
+.links {
+  text-align: center;
 }
 
 .current-icon {
